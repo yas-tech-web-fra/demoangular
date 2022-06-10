@@ -1,0 +1,39 @@
+<span *ngFor="let user of users; let isOdd = odd">
+  <!-- Exemple avec l'ID -->
+  <div *ngIf="user.id % 2 === 0" class="container">
+  <!-- Exemple avec odd (sur l'INDEX) :  -->
+  <!-- <div *ngIf="isOdd" class="container"> -->
+    <div class="background">
+      <!--On appelle ensuite les attributs souhaités comme fait dans la démo.-->
+      <div class="card-header">
+        {{ user.company.name }}
+        <div class="card">
+          <div class="name">
+            {{ user.name }}
+          </div>
+          <div class="info">
+            <p>Site : {{ user.website }}</p>
+            <p>email : {{ user.email }}</p>
+            <p>Téléphone : {{ user.phone }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+  <li *ngFor="let utilisateur of utilisateurs">{{utilisateur.index}} {{utilisateur.nom}} {{utilisateur.prenom}}</li>
+</ul>
+

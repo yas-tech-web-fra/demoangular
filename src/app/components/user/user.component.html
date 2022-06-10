@@ -1,6 +1,8 @@
 <h2>Utilisateur</h2>
-<p>{{nom}}</p>
-<p>{{prenom}}</p>
+<p>Nom : {{nom}}</p>
+<p>Prénom : {{prenom}}</p>
+<p>Job : {{job}}</p>
+
 <img [src] ="imageUrl">
 <!-- <img src="{{imageUrl}}"> --><!-- on ne fait pas ceci car trop long a charger en 2x! -->
-
+<input type="text" name="jobLabel" [(ngModel)]="job">
