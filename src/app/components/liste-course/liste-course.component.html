@@ -1,0 +1,12 @@
+<ul *ngFor="let article of articles">
+  <li>{{article}}</li>
+</ul>
+
+
+<!-- formulaire pour ajouter un article -->
+<!-- ngSubmit est une ecoute d evenement de type submit, specifique a Angularc'est l equivalent d'onSubmit-->
+<form (ngSubmit)="addArticle()">
+  <!-- on utilise le two way binding(banana in the box) pour lier l input a notre attribut 'newArticle ' -->
+<input type ="text" name = "newArticle " [(ngModel)]="newArticle">
+<button type="submit">Ajouter</button>
+</form>

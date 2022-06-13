@@ -1,0 +1,9 @@
+<div class="card">
+
+<div *ngFor="let timezone of timezones">
+
+  <div class="card-body">
+  <app-show-hour [hour]="setTime(timezone)"></app-show-hour>
+</div>
+</div>
+</div>
